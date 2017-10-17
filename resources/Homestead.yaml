@@ -4,6 +4,13 @@ memory: 2048
 cpus: 1
 provider: virtualbox
 
+# Custom application name to scoping virtual machine
+# name:
+#   - your-application-name
+
+# Use downloaded virtual box file, Visit https://app.vagrantup.com/boxes/search
+# box_url: ~/boxes/homestead-3.0.0.box
+
 authorize: ~/.ssh/id_rsa.pub
 
 keys:
@@ -19,6 +26,9 @@ sites:
 
 databases:
     - homestead
+
+# Use mariadb instead of MySQL
+# mariadb: true
 
 # blackfire:
 #     - id: foo
