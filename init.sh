@@ -1,12 +1,11 @@
 #!/usr/bin/env bash
 
-if [[ -n "$1" ]]; then
-    cp -i resources/Homestead.json Homestead.json
-else
-    cp -i resources/Homestead.yaml Homestead.yaml
-fi
+homesteadRoot="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"/../.homestead
 
-cp -i resources/after.sh after.sh
-cp -i resources/aliases aliases
+mkdir -p "$homesteadRoot"
+
+cp -i resources/Homestead.yaml "$homesteadRoot/Homestead.yaml"
+cp -i resources/after.sh "$homesteadRoot/after.sh"
+cp -i resources/aliases "$homesteadRoot/aliases"
 
 echo "Homestead initialized!"
