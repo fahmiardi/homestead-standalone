@@ -26,27 +26,27 @@ Example scenario:
 
 The project contains web and api layer and must run together in same machine.
 
-``bash
+```bash
 - project
 -- web
 -- api
 -- homestead-standalone
-``
+```
 
 From `project/homestead-standalone`, run `sh init.sh` and get terminal output:
 
-``bash
+```bash
 Homestead initialized!
-``
+```
 
 In `project` folder, you must see hidden folder `.homestead` by typing command `ls -la`.
 
-``bash
+```bash
 - project
 -- web
 -- api
 -- homestead-standalone
 -- .homestead
-``
+```
 
 Finally, custom your machine configuration by modify `.homestead/Homestead.yaml` file.
