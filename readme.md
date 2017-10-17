@@ -17,5 +17,36 @@ Official documentation [is located here](https://laravel.com/docs/homestead).
 
 ## Custom
 
-    - Support to run standalone by scoping the project
-    - Using offline `box_url` (downloaded boxes)
+- Support to run standalone by scoping the project
+- Using offline `box_url` (downloaded boxes)
+
+## How to use custom
+
+Example scenario:
+
+The project contains web and api layer and must run together in same machine.
+
+``bash
+- project
+-- web
+-- api
+-- homestead-standalone
+```
+
+From `project/homestead-standalone`, run `sh init.sh` and get terminal output:
+
+``bash
+Homestead initialized!
+``
+
+In `project` folder, you must see hidden folder `.homestead` by typing command `ls -la`.
+
+``bash
+- project
+-- web
+-- api
+-- homestead-standalone
+-- .homestead
+```
+
+Finally, custom your machine configuration by modify `.homestead/Homestead.yaml` file.
