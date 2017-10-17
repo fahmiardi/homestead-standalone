@@ -31,7 +31,7 @@ The project contains web and api layer and must run together in same machine.
 -- web
 -- api
 -- homestead-standalone
-```
+``
 
 From `project/homestead-standalone`, run `sh init.sh` and get terminal output:
 
@@ -47,6 +47,6 @@ In `project` folder, you must see hidden folder `.homestead` by typing command `
 -- api
 -- homestead-standalone
 -- .homestead
-```
+``
 
 Finally, custom your machine configuration by modify `.homestead/Homestead.yaml` file.
